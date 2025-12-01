@@ -11,7 +11,7 @@ img {
 }
 
 .container {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 16px;
   height: 90px;
@@ -82,11 +82,11 @@ p {
 /* Main */
 
 .card {
-  width: calc(100% / 3);
   min-height: 400px;
   padding: 20px 15px;
   box-shadow: 2px 2px 4px 4px #e8e8e8;
   border-radius: 15px;
+  flex-grow: 1;
 }
 
 .container-card {
@@ -94,7 +94,7 @@ p {
   margin: 70px auto;
   min-height: 500px;
   justify-content: space-between;
-  width: 1000px;
+  max-width: 1000px;
   padding: 0 16px;
   flex-wrap: wrap;
 }
@@ -122,7 +122,7 @@ p {
 
 .discount {
   font-size: 10px;
-  display: inline-block;
+  text-align: center;
   margin: 0 84px;
 }
 
@@ -150,7 +150,7 @@ p {
 
 li {
   font-size: 20px;
-  margin: 20px 0;
+  margin: 20px 14px;
 }
 
 i {
@@ -165,7 +165,7 @@ ul {
   align-items: flex-start;
 }
 
-.card-mid {
+/* .card-mid {
   background-color: #5c0ef5;
   color: white;
   min-width: 200px;
@@ -183,4 +183,31 @@ ul {
   margin: 10px auto;
   line-height: 50px;
   text-align: center;
+}
+
+.discount-value-mid {
+  display: inline-block;
+  font-size: 10ps;
+  height: 18px;
+  width: 46px;
+  background-color: white;
+  border-radius: 5px;
+  line-height: 18px;
+  text-align: center;
+  color: black;
+} */
+
+.card:nth-child(2) {
+  background-color: #5c0ef5;
+  color: white;
+}
+
+.button-plan.mid {
+  background-color: white;
+  color: #5c0ef5;
+}
+
+.discount-value.mid {
+  background-color: white;
+  color: black;
 }
