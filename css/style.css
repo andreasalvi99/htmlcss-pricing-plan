@@ -38,6 +38,7 @@ header > .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .switch-selector {
@@ -47,6 +48,9 @@ header > .container {
   display: inline-block;
 }
 
+.container > div {
+  flex-shrink: 0;
+}
 .switch-selector.month {
   background-color: black;
 }
@@ -80,13 +84,18 @@ p {
 }
 
 /* Main */
+.main-section {
+  padding: 30px;
+}
 
 .card {
   min-height: 400px;
   padding: 20px 15px;
   box-shadow: 2px 2px 4px 4px #e8e8e8;
   border-radius: 15px;
+  min-width: 150px;
   flex-grow: 1;
+  /* height: 460px; */
 }
 
 .container-card {
@@ -97,6 +106,7 @@ p {
   max-width: 1000px;
   padding: 0 16px;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .price {
@@ -123,7 +133,7 @@ p {
 .discount {
   font-size: 10px;
   text-align: center;
-  margin: 0 84px;
+  margin-bottom: 20px;
 }
 
 .discount-value {
@@ -149,8 +159,8 @@ p {
 }
 
 li {
-  font-size: 20px;
-  margin: 20px 14px;
+  font-size: 15px;
+  margin-left: 10px;
 }
 
 i {
@@ -161,41 +171,9 @@ i {
 ul {
   display: flex;
   flex-direction: column;
-
+  gap: 10px;
   align-items: flex-start;
 }
-
-/* .card-mid {
-  background-color: #5c0ef5;
-  color: white;
-  min-width: 200px;
-  min-height: 400px;
-  padding: 20px 15px;
-  border-radius: 15px;
-}
-
-.button-plan-mid {
-  background-color: white;
-  color: #5c0ef5;
-  height: 50px;
-  width: 260px;
-  border-radius: 10px;
-  margin: 10px auto;
-  line-height: 50px;
-  text-align: center;
-}
-
-.discount-value-mid {
-  display: inline-block;
-  font-size: 10ps;
-  height: 18px;
-  width: 46px;
-  background-color: white;
-  border-radius: 5px;
-  line-height: 18px;
-  text-align: center;
-  color: black;
-} */
 
 .card:nth-child(2) {
   background-color: #5c0ef5;
